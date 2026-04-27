@@ -1,17 +1,36 @@
-# loan_app
+# HisaabBook 
 
-A new Flutter project.
+A personal finance tracker app built with Flutter & SQFlite.
 
-## Getting Started
+## Features
+- User Login & Sign Up UI screens
+- Local database storage using SQFlit
+-  View transactions
+- Add Income & Expense transactions
+- Delete transactions with long press
 
-This project is a starting point for a Flutter application.
+## Widgets Used
+- Form & Validation
+- Bottom Navigation Bar
+- ListView.builder
+- ElevatedButton
+- Checkbox, Radio Button
+- TextFormField
+- RefreshIndicator
+- FloatingActionButton
+- AppBar
+- DropdownButton
+- Switch
+- ListTile
+- Drawer
 
-A few resources to get you started if this is your first Flutter project:
+## OOP Concepts Used
+- Classes and Objects
+- Encapsulation
+- Inheritance
+- Abstract Classes
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Tech Stack
+- Flutter & Dart
+- SQFlite (Local Database)
+- Android Studio
