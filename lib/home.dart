@@ -116,7 +116,7 @@ class _HomeState extends State<Home> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "As-slamu Alaykum",
+                  "Hi,",
                   style: TextStyle(color: Colors.white, fontSize: 16),
                 ),
                 Text(
@@ -128,7 +128,7 @@ class _HomeState extends State<Home> {
                   ),
                 ),
                 Card(
-                  color: Colors.white38,
+                  color: Color(0xFF9C6FFF) ,
                   margin: EdgeInsets.only(
                     left: 50,
                     right: 50,
@@ -143,18 +143,18 @@ class _HomeState extends State<Home> {
                       children: [
                         Text(
                           "Total Balance",
-                          style: TextStyle(color: Colors.white, fontSize: 16),
+                          style: TextStyle(color: Colors.white, fontSize: 18, fontWeight: FontWeight.bold),
                         ),
                         Text(
                           "Rs. 452, 00",
-                          style: TextStyle(color: Colors.white, fontSize: 16),
+                          style: TextStyle(color: Colors.white, fontSize: 18,  fontWeight: FontWeight.bold),
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Card(
                               // Two cards inside the main card
-                              color: Color(0xFFB8C0FF).withOpacity(0.2),
+                              color: Color(0xFF1A237E),
                               child: Padding(
                                 padding: EdgeInsets.all(15),
                                 child: Column(
@@ -169,8 +169,9 @@ class _HomeState extends State<Home> {
                                     Text(
                                       "+6889",
                                       style: TextStyle(
-                                        color: Colors.white,
+                                        color: Colors.green,
                                         fontSize: 16,
+                                        fontWeight: FontWeight.bold
                                       ),
                                     ),
                                   ],
@@ -179,7 +180,7 @@ class _HomeState extends State<Home> {
                             ),
                             Card(
                               // Two cards inside the main card
-                              color: Color(0xFFB8C0FF).withOpacity(0.2),
+                              color: Color(0xFF1A237E),
 
                               child: Padding(
                                 padding: EdgeInsets.all(15),
@@ -190,13 +191,15 @@ class _HomeState extends State<Home> {
                                       style: TextStyle(
                                         color: Colors.white,
                                         fontSize: 16,
+
                                       ),
                                     ),
                                     Text(
                                       "+6889",
                                       style: TextStyle(
-                                        color: Colors.white,
+                                        color: Colors.red,
                                         fontSize: 16,
+                                        fontWeight: FontWeight.bold
                                       ),
                                     ),
                                   ],
@@ -222,21 +225,21 @@ class _HomeState extends State<Home> {
                       children: [
                         Expanded(
                           child: ReusableCard(
-                            Colors.lightGreenAccent,
+                            Color(0xFFE8F5E9),
                             Icon(Icons.add),
                             "Income",
                           ),
                         ),
                         Expanded(
                           child: ReusableCard(
-                            Colors.pinkAccent,
+                            Color(0xFFFFEBEE),
                             Icon(Icons.add),
                             "Expense",
                           ),
                         ),
                         Expanded(
                           child: ReusableCard(
-                            Colors.lightBlueAccent,
+                            Color(0xFFE3F2FD),
                             Icon(Icons.watch_later_outlined),
                             "History",
                           ),
@@ -308,11 +311,16 @@ class ReusableCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      color: cardColor,
-      child: Padding(
-        padding: const EdgeInsets.all(30),
-        child: Column(children: [icon, Text(text)]),
+    return Container(
+      height: 100,
+      width: 100,
+      child: Card(
+
+        color: cardColor,
+        child: Padding(
+          padding: const EdgeInsets.all(20),
+          child: Center(child: Column(children: [icon, Text(text, style: TextStyle(fontSize: 10),)])),
+        ),
       ),
     );
   }
